@@ -5,24 +5,180 @@ body {
     color: #333;
     background-color: #f9f9f9;
     margin: 20px;
+    scroll-padding-top: 100px; /* Ensures sections don't get covered by navbar */
 }
 
-h2, h3, h4, h5 {
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Fix Section Jump Offset */
+[id] {
+    scroll-margin-top: 100px; /* Ensures section headers are not covered */
+}
+
+/* Headers */
+h2.section-title {
     color: #2c3e50;
-}
-
-/* Borders for Sections */
-h2, h3, h4 {
-    border-bottom: 2px solid #3498db;
+    border-bottom: 3px solid #3498db;
     padding-bottom: 5px;
+    font-size: 28px;
+    margin-top: 100px;
 }
 
-/* Lists */
-ul, ol {
-    margin: 15px 0;
-    padding-left: 25px;
+h3.category-title {
+    font-size: 24px;
+    padding-bottom: 4px;
+}
+
+h4.item-title {
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+/* Category Styling as a Single Box */
+.category {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cleaning-supplies {
+    background-color: #d9ecf2;
+}
+
+.paper {
+    background-color: #faf0e6;
+}
+
+.destroyed {
+    background-color: #7B601D;
+    color: white;
+}
+
+/* Remove Bullet Points */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
 
 li {
     margin-bottom: 8px;
+}
+
+/* Trash of the Week Section */
+h2.trash-week {
+    color: #c0392b;
+    font-size: 26px;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 5px;
+}
+
+h3.trash-item {
+    color: #e74c3c;
+    font-size: 22px;
+    font-style: italic;
+    padding-bottom: 2px;
+}
+
+p.trash-description {
+    color: #7f8c8d;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Image Grid Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+}
+
+/* About Page Styling - Philosophical Vibe */
+.about-section {
+    background-color: #f4f1ea;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+    color: #4a4a4a;
+}
+
+.about-section h2 {
+    color: #3d3d3d;
+    text-align: center;
+    border-bottom: 2px solid #8a7d6d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #5a5a5a;
+}
+
+.about-section em {
+    color: #8a7d6d;
+    font-style: italic;
+}
+
+.about-section ul {
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.about-section li {
+    margin-bottom: 10px;
 }
