@@ -56,6 +56,50 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* Sub Navigation Bar */
+.sub-navbar {
+    background-color: #3b4c63; /* Lighter shade of navbar */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 75px; /* Ensures it appears right below the main navbar */
+    z-index: 999;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+    border-radius: 4px;
+}
+
+.sub-nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Sub Navigation Bar Adjustments for Fixed Positioning */
+.sub-navbar.fixed {
+    position: fixed;
+    top: 60px; /* Below the main navbar */
+    left: 0;
+    width: 100%;
+    background: #4a5c78;
+    padding: 10px 0;
+    z-index: 998;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Additional Styling Enhancements */
+.sub-navbar.scrolled {
+    background: rgba(59, 76, 99, 0.9);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* Fix Section Jump Offset */
 [id] {
     scroll-margin-top: 100px; /* Ensures section headers are not covered */
