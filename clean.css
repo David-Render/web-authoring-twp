@@ -68,24 +68,37 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.navbar svg {
+    display: block; /* Prevents text shifting */
+    margin: 0; /* Ensures no extra space */
+    padding: 0; /* Removes unwanted padding */
+}
+
 /* Sub Navigation Bar */
 .sub-navbar {
-    background-color: #3b4c63; /* Lighter shade of navbar */
-    padding: 10px;
+    background-color: #3b4c63; 
+    padding: 10px 0; 
     text-align: center;
-    width: 100%;
-    position: relative;
-    top: 75px; /* Ensures it appears right below the main navbar */
+    width: 100%; 
+    position: relative; 
+    margin: 0 auto; 
+    top: 75px; 
     z-index: 999;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-nav-links {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 16px; 
 }
 
 .sub-nav-links a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 8px 12px;
-    margin: 0 8px;
+    padding: 8px 12px; 
     transition: color 0.3s ease;
     border-radius: 4px;
 }
@@ -94,27 +107,15 @@ body {
     color: #f39c12;
 }
 
-/* Sub Navigation Bar Adjustments for Fixed Positioning */
-.sub-navbar.fixed {
-    position: fixed;
-    top: 60px; /* Below the main navbar */
-    left: 0;
-    width: 100%;
-    background: #4a5c78;
-    padding: 10px 0;
-    z-index: 998;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Additional Styling Enhancements */
 .sub-navbar.scrolled {
     background: rgba(59, 76, 99, 0.9);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Fix Section Jump Offset */
 [id] {
-    scroll-margin-top: 100px; /* Ensures section headers are not covered */
+    scroll-margin-top: 100px;
 }
 
 /* Headers */
@@ -132,9 +133,11 @@ h3.category-title {
     padding-bottom: 4px;
 }
 
-h4.item-title {
+h3.section-title, h4.item-title {
     font-size: 20px;
     padding-bottom: 3px;
+    text-align: left;
+    margin-left: 25px;
 }
 
 /* Category Styling as a Single Box */
@@ -156,6 +159,18 @@ h4.item-title {
 .destroyed {
     background-color: #7B601D;
     color: white;
+}
+
+.totw-link {
+    color: #b8860b; /* Deep golden color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes it stand out */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* 🔹 Hover Effect - Slightly Darker Gold */
+.totw-link:hover {
+    color: #6d1d0f; /* Darker shade of gold */
 }
 
 /* Remove Bullet Points */
@@ -333,3 +348,4 @@ p.trash-description {
     cursor: pointer;
     min-width: 50px; 
 }
+
