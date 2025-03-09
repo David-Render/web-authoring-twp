@@ -23,6 +23,9 @@ body {
 /* Navigation Bar */
 .navbar {
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,14 +36,9 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
-}
-
 .nav-logo {
+    position: absolute;
+    left: 20px; 
     display: flex;
     align-items: center;
 }
@@ -52,7 +50,6 @@ body {
     flex-grow: 1;
     gap: 20px;
 }
-
 
 .nav-links a {
     color: white;
@@ -115,7 +112,7 @@ body {
 
 /* Fix Section Jump Offset */
 [id] {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 125px;
 }
 
 /* Headers */
