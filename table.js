@@ -59,4 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (defaultHeader) {
         sortTable(0, "number", defaultHeader);
     }
+
+    // Relearning js made me very sad
 });
