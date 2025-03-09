@@ -254,3 +254,82 @@ p.trash-description {
 .about-section li {
     margin-bottom: 10px;
 }
+
+/* TABLE STYLING - Expands to Fit Content */
+.item-table {
+    width: 100%;
+    max-width: 1400px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: center; 
+    table-layout: fixed;
+    overflow: visible;
+}
+
+/*  COLUMN SIZING - Avoid Overlap */
+.item-table th, .item-table td {
+    padding: 15px 20px; /* Increased padding for better spacing */
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    vertical-align: middle; /* Ensures content is centered vertically */
+}
+
+
+.item-table th:nth-child(1), .item-table td:nth-child(1) {
+    width: 22%;
+}
+
+.item-table th:nth-child(2), .item-table td:nth-child(2),
+.item-table th:nth-child(3), .item-table td:nth-child(3),
+.item-table th:nth-child(4), .item-table td:nth-child(4),
+.item-table th:nth-child(5), .item-table td:nth-child(5) {
+    width: 16%;
+}
+
+.item-table th:nth-child(6), .item-table td:nth-child(6) {
+    width: 20%;
+}
+
+/*  ICON & TEXT TOGGLE EFFECT */
+.icon {
+    position: relative;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 50px; 
+}
+
+
+.icon i {
+    transition: opacity 0.3s ease;
+}
+
+
+.icon.clicked i {
+    display: none;
+}
+
+.icon.clicked::after {
+    content: none;
+}
+
+/* Display Only the Clicked Text */
+.icon.clicked {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    min-width: 50px; 
+}
