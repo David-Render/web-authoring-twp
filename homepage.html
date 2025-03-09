@@ -157,12 +157,14 @@
             <table class="item-table">
                 <thead>
                     <tr>
-                        <th onclick="sortTable(0, 'text', this)">Item Name</th>
-                        <th onclick="sortTable(1, 'text', this)">Disposal</th>
+                        <th onclick="sortTable(0, 'number', this)">Item Name</th>
+                        <th onclick="sortTable(1, 'number', this)">Disposal</th>
                         <th onclick="sortTable(2, 'number', this)">Weight</th>
                         <th onclick="sortTable(3, 'number', this)">Time Used</th>
-                        <th onclick="sortTable(4, 'text', this)">Source</th>
-                        <th onclick="sortTable(5, 'number', this)">Cost</th>
+                        <th onclick="sortTable(4, 'number', this)">Frequency Used</th>
+                        <th onclick="sortTable(5, 'number', this)">Source</th>
+                        <th onclick="sortTable(6, 'number', this)">Location</th>
+                        <th onclick="sortTable(7, 'number', this)">Cost</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -171,7 +173,9 @@
                         <td data-sort="2"><span class="icon clickable" data-text="Recycled"><i class="fas fa-recycle"></i></span></td>
                         <td data-sort="8"><span class="icon clickable" data-text="1.5 pounds"><i class="fas fa-weight-hanging"></i><i class="fas fa-weight-hanging"></i></span></td>
                         <td data-sort="3"><span class="icon clickable" data-text="3 months"><i class="fas fa-hourglass-start"></i></span></td>
+                        <td data-sort="30"><span class="icon clickable" data-text="Monthly"><i class="fas fa-calendar-check"></i></span></td>
                         <td data-sort="6"><span class="icon clickable" data-text="Online Purchase"><i class="fas fa-truck"></i></span></td>
+                        <td data-sort="1"><span class="icon clickable" data-text="Garage"><i class="fas fa-warehouse"></i></span></td>
                         <td data-sort="0"><span class="icon clickable" data-text="Free"><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                     <tr>
@@ -179,7 +183,9 @@
                         <td data-sort="3"><span class="icon clickable" data-text="Trashed"><i class="fas fa-trash"></i></span></td>
                         <td data-sort="2"><span class="icon clickable" data-text="16 grams"><i class="fas fa-weight-hanging"></i></span></td>
                         <td data-sort="0"><span class="icon clickable" data-text="Used Immediately"><i class="fas fa-bolt"></i></span></td>
+                        <td data-sort="1000"><span class="icon clickable" data-text="Once"><i class="fas fa-check"></i></span></td>
                         <td data-sort="4"><span class="icon clickable" data-text="Local Wegmans"><i class="fas fa-store"></i></span></td>
+                        <td data-sort="1"><span class="icon clickable" data-text="Garage"><i class="fas fa-warehouse"></i></span></td>
                         <td data-sort="1"><span class="icon clickable" data-text="$1"><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                     <tr>
@@ -189,7 +195,9 @@
                         <td data-sort="36"><span class="icon clickable" data-text="3 years">
                             <i class="fas fa-calendar-alt"></i><i class="fas fa-calendar-alt"></i><i class="fas fa-calendar-alt"></i>
                         </span></td>
+                        <td data-sort="1"><span class="icon clickable" data-text="Daily"><i class="fas fa-clock"></i></span></td>
                         <td data-sort="2"><span class="icon clickable" data-text="Local Staples"><i class="fas fa-store"></i></span></td>
+                        <td data-sort="6"><span class="icon clickable" data-text="Table"><i class="fas fa-table"></i></span></td>
                         <td data-sort="2"><span class="icon clickable" data-text="$2"><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                     <tr>
@@ -197,7 +205,9 @@
                         <td data-sort="3"><span class="icon clickable" data-text="Trashed"><i class="fas fa-trash"></i></span></td>
                         <td data-sort="6"><span class="icon clickable" data-text="0.8 pounds"><i class="fas fa-weight-hanging"></i><i class="fas fa-weight-hanging"></i></span></td>
                         <td data-sort="24"><span class="icon clickable" data-text="2 years"><i class="fas fa-calendar-alt"></i><i class="fas fa-calendar-alt"></i></span></td>
+                        <td data-sort="7"><span class="icon clickable" data-text="Weekly"><i class="fas fa-calendar-day"></i></span></td>
                         <td data-sort="3"><span class="icon clickable" data-text="Local Target"><i class="fas fa-store"></i></span></td>
+                        <td data-sort="3"><span class="icon clickable" data-text="Living Room"><i class="fas fa-couch"></i></span></td>
                         <td data-sort="12"><span class="icon clickable" data-text="$12"><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                     <tr>
@@ -205,7 +215,9 @@
                         <td data-sort="2"><span class="icon clickable" data-text="Recycled"><i class="fas fa-recycle"></i></span></td>
                         <td data-sort="5"><span class="icon clickable" data-text="100 grams"><i class="fas fa-weight-hanging"></i></span></td>
                         <td data-sort="9"><span class="icon clickable" data-text="9 months"><i class="fas fa-hourglass-end"></i></span></td>
-                        <td data-sort="9"><span class="icon clickable" data-text="Snowboard Rental Bonus"><i class="fas fa-snowboarding"></i></span></td>
+                        <td data-sort="100000"><span class="icon clickable" data-text="Never"><i class="fas fa-times"></i></span></td>
+                        <td data-sort="9"><span class="icon clickable" data-text="Snowboard Shop"><i class="fas fa-snowboarding"></i></span></td>
+                        <td data-sort="3"><span class="icon clickable" data-text="Living Room"><i class="fas fa-couch"></i></span></td>
                         <td data-sort="0"><span class="icon clickable" data-text="Free"><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                     <tr>
@@ -213,7 +225,9 @@
                         <td data-sort="3"><span class="icon clickable" data-text="Trashed"><i class="fas fa-trash"></i></span></td>
                         <td data-sort="3"><span class="icon clickable" data-text="30 grams"><i class="fas fa-weight-hanging"></i></span></td>
                         <td data-sort="3"><span class="icon clickable" data-text="3 months"><i class="fas fa-hourglass-start"></i></span></td>
-                        <td data-sort="1"><span class="icon clickable" data-text="Costco Bulk Purchase"><i class="fas fa-store"></i></span></td>
+                        <td data-sort="1"><span class="icon clickable" data-text="Daily"><i class="fas fa-clock"></i></span></td>
+                        <td data-sort="1"><span class="icon clickable" data-text="Local Costco"><i class="fas fa-store"></i></span></td>
+                        <td data-sort="2"><span class="icon clickable" data-text="Kitchen"><i class="fas fa-faucet"></i></span></td>
                         <td data-sort="2.1"><span class="icon clickable" data-text="~ $2"><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                     <tr>
@@ -223,7 +237,9 @@
                             <i class="fas fa-weight-hanging"></i><i class="fas fa-weight-hanging"></i><i class="fas fa-weight-hanging"></i><i class="fas fa-weight-hanging"></i>
                         </span></td>
                         <td data-sort="0.1"><span class="icon clickable" data-text="10 minutes"><i class="fas fa-bolt"></i></span></td>
+                        <td data-sort="1000"><span class="icon clickable" data-text="Once"><i class="fas fa-check"></i></span></td>
                         <td data-sort="5"><span class="icon clickable" data-text="Nature"><i class="fas fa-tree"></i></span></td>
+                        <td data-sort="4"><span class="icon clickable" data-text="Outside"><i class="fas fa-tree"></i></span></td>
                         <td data-sort="0"><span class="icon clickable" data-text="Free"><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                     <tr>
@@ -231,7 +247,9 @@
                         <td data-sort="2"><span class="icon clickable" data-text="Recycled"><i class="fas fa-recycle"></i></span></td>
                         <td data-sort="7"><span class="icon clickable" data-text="1 pound"><i class="fas fa-weight-hanging"></i><i class="fas fa-weight-hanging"></i></span></td>
                         <td data-sort="6"><span class="icon clickable" data-text="6 months"><i class="fas fa-hourglass-half"></i></span></td>
+                        <td data-sort="1"><span class="icon clickable" data-text="Daily"><i class="fas fa-clock"></i></span></td>
                         <td data-sort="6"><span class="icon clickable" data-text="Online Purchase"><i class="fas fa-truck"></i></span></td>
+                        <td data-sort="5"><span class="icon clickable" data-text="Pipes"><i class="fas fa-wrench"></i></span></td>
                         <td data-sort="30"><span class="icon clickable" data-text="$30">
                             <i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i>
                         </span></td>
@@ -241,13 +259,42 @@
                         <td data-sort="3"><span class="icon clickable" data-text="Trashed"><i class="fas fa-trash"></i></span></td>
                         <td data-sort="4"><span class="icon clickable" data-text="40 grams"><i class="fas fa-weight-hanging"></i></span></td>
                         <td data-sort="12"><span class="icon clickable" data-text="1 year"><i class="fas fa-calendar-alt"></i></span></td>
+                        <td data-sort="14"><span class="icon clickable" data-text="Biweekly"><i class="fas fa-calendar-day"></i><i class="fas fa-calendar-day"></i></span></td>
                         <td data-sort="8"><span class="icon clickable" data-text="School Book Fair"><i class="fas fa-school"></i></span></td>
+                        <td data-sort="3"><span class="icon clickable" data-text="Living Room"><i class="fas fa-couch"></i></span></td>
                         <td data-sort="3"><span class="icon clickable" data-text="$3"><i class="fas fa-dollar-sign"></i></span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+
+    <div class="wrapper">
+        <h2 id="coda" class="section-title">Coda</h2>
+        <p>
+            Looking back at this week's discarded items, I noticed a general recurring theme, convenience versus longevity. 
+            The water filter served its purpose but had to be replaced due to buildup, while the sponge wore out gradually without me noticing until it was too ineffective to use. 
+            On the other hand some items, like the penguin plushy, met their fate unexpectedly thanks to my dog’s curiosity.
+        </p>
+        <p>
+            One thing that stood out was how some objects, like the tree branch, came from nature and returned to it. 
+            Others, like the Cola can, were artificially created and ultimately trashed. 
+            Recycling the water filter was a win, as it felt like a more responsible approach than simply throwing it away. 
+            However, finding a way to repurpose everyday waste is something I’d like to explore further in the coming weeks.
+        </p>
+        <p>
+            Next week, I plan to pay closer attention to what enters my space in the first place. 
+            Rather than just tracking what I discard, I want to start questioning why I obtain these things to begin with. 
+            Would I have avoided some of this week's waste if I had been more mindful about my purchases and habits?
+        </p>
+        <p>
+            If you've been following along, let me know—what’s the most surprising thing you’ve thrown away recently? 
+            Have you ever had an item that made you pause before letting it go? 
+            Feel free to share your thoughts!
+        </p>
+    </div>
+    
+    
 <script src="table.js"></script>
 </body>
 </html>

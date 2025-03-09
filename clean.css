@@ -270,63 +270,65 @@ p.trash-description {
     margin-bottom: 10px;
 }
 
-/* TABLE STYLING - Expands to Fit Content */
+/* General Table Styling */
 .item-table {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1400px; 
     border-collapse: collapse;
     margin: 20px auto;
-    font-size: 18px;
-    text-align: center; 
+    font-size: 18px; 
+    text-align: center;
     table-layout: fixed;
     overflow: visible;
 }
 
-/*  COLUMN SIZING - Avoid Overlap */
+/* Column Sizing - Adjusted to avoid overlap */
 .item-table th, .item-table td {
-    padding: 15px 20px; /* Increased padding for better spacing */
+    padding: 15px 10px; 
     border-bottom: 1px solid #ddd;
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
-    vertical-align: middle; /* Ensures content is centered vertically */
+    vertical-align: middle; 
 }
 
-
 .item-table th:nth-child(1), .item-table td:nth-child(1) {
-    width: 22%;
+    width: 18%; 
 }
 
 .item-table th:nth-child(2), .item-table td:nth-child(2),
 .item-table th:nth-child(3), .item-table td:nth-child(3),
-.item-table th:nth-child(4), .item-table td:nth-child(4),
-.item-table th:nth-child(5), .item-table td:nth-child(5) {
-    width: 16%;
+.item-table th:nth-child(4), .item-table td:nth-child(4) {
+    width: 12%; 
 }
 
+.item-table th:nth-child(5), .item-table td:nth-child(5),
 .item-table th:nth-child(6), .item-table td:nth-child(6) {
-    width: 20%;
+    width: 14%;
 }
 
-/*  ICON & TEXT TOGGLE EFFECT */
+.item-table th:nth-child(7), .item-table td:nth-child(7),
+.item-table th:nth-child(8), .item-table td:nth-child(8) {
+    width: 15%; 
+}
+
+/* Icon & Text Toggle Effect */
 .icon {
     position: relative;
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
     font-weight: bold;
     color: black;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 50px; 
+    min-width: 40px; 
 }
-
 
 .icon i {
     transition: opacity 0.3s ease;
 }
-
 
 .icon.clicked i {
     display: none;
@@ -342,10 +344,9 @@ p.trash-description {
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    font-size: 18px;
+    font-size: 16px; 
     font-weight: bold;
     color: black;
     cursor: pointer;
-    min-width: 50px; 
+    min-width: 40px; 
 }
-
