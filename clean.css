@@ -10,7 +10,7 @@ body {
 
 /* Wrapper Styling */
 .wrapper {
-    max-width: 900px; /* Sets a reasonable limit */
+    font-size: 20px;
     margin: 0 auto; /* Centers the content */
     padding: 20px;
     background: white;
@@ -69,6 +69,10 @@ body {
     display: block; /* Prevents text shifting */
     margin: 0; /* Ensures no extra space */
     padding: 0; /* Removes unwanted padding */
+}
+
+.current-page {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Sub Navigation Bar */
