@@ -206,7 +206,7 @@ h3.about-section-title {
     font-weight: bold;
     border-radius: 30px; /* Rounded bubble shape */
     border: 2px solid #2c3e50; /* Blue border to match text */
-    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    transition: 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .continue-button a:hover {
@@ -455,14 +455,15 @@ p.trash-description {
 /* Trash of the Week Styling */
 .totw-title {
     text-align: center;
-    font-size: 50px; /* Large but clean size */
-    font-weight: bold;
-    color: transparent; /* Hide default text */
-    background: url('images/waterfall.gif'); /* GIF as text background */
+    font-size: 50px; 
+    font-weight: 900; 
+    color: transparent; 
+    background: url('images/waterfall.gif'); 
     background-clip: text;
-    -webkit-background-clip: text; /* Ensures text takes on texture */
-    margin: 50px auto 20px; /* Adds spacing between navbar and content */
+    -webkit-background-clip: text;
+    margin: 120px auto 20px;
     display: block;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
 }
 
 .totw-image {
@@ -481,4 +482,45 @@ p.trash-description {
     margin: 5px 0 10px 20px;; 
     border-radius: 12px; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Other Titles */
+
+.totw-title {
+    text-align: center;
+    font-size: 50px; 
+    font-weight: 900; 
+    color: transparent; 
+    background: url('images/waterfall.gif'); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 120px auto 20px;
+    display: block;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+}
+
+.items-title {
+    text-align: center;
+    font-size: 50px; 
+    font-weight: 900; 
+    color: transparent; 
+    background: url('images/stars-space.gif'); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 120px auto 20px;
+    display: block;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
+}
+
+.pref-title {
+    text-align: center;
+    font-size: 50px; 
+    font-weight: 900; 
+    color: transparent; 
+    background: url('images/plant-full.gif'); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 120px auto 20px;
+    display: block;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.2);
 }
