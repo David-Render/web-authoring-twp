@@ -124,25 +124,25 @@ h2.section-title {
     color: #2c3e50;
     border-bottom: 3px solid #3498db;
     padding-bottom: 5px;
-    font-size: 28px;
+    font-size: 36px;
     margin-top: 100px;
     text-align: center;
 }
 
 h3.category-title {
-    font-size: 24px;
+    font-size: 32px;
     padding-bottom: 4px;
 }
 
 h3.section-title, h4.item-title {
-    font-size: 20px;
+    font-size: 28px;
     padding-bottom: 3px;
     text-align: left;
     margin-left: 25px;
 }
 
 h3.about-section-title {
-    font-size: 20px;
+    font-size: 28px;
     padding-bottom: 3px;
     text-align: center;
     margin-left: 25px;
@@ -281,11 +281,14 @@ p.trash-description {
     margin-bottom: 20px;
 }
 
-.about-section p {
+.wrapper p {
     text-align: justify;
     font-size: 18px;
     line-height: 1.8;
-    color: #5a5a5a;
+    color: #333;
+    padding: 0 40px; /* Consistent left/right padding */
+    max-width: 85%; /* Prevents text from stretching too wide */
+    margin: 0 auto; /* Ensures centering within the wrapper */
 }
 
 .about-section em {
